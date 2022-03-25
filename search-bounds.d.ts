@@ -1,4 +1,4 @@
-declare module "binary-search-bounds" {
+declare module "binary-searching" {
   /**
    * Custom comparison function
    *

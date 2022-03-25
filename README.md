@@ -1,16 +1,16 @@
-# binary-search-bounds
+# binary-searching
 
 Binary search on arrays for predecessor, successor and range queries.
 
 ### Rationale
 
-The main reason for using a [binary search](https://en.wikipedia.org/wiki/Binary_search_algorithm) or ordered set data structure instead of a hash map is to support fast predecessor/successor queries. Besides this library, I am aware of no other modules on npm which implement these semantics (making them effectively useless)!!! `binary-search-bounds` corrects this sad state of affairs.
+The main reason for using a [binary search](https://en.wikipedia.org/wiki/Binary_search_algorithm) or ordered set data structure instead of a hash map is to support fast predecessor/successor queries. Besides this library, I am aware of no other modules on npm which implement these semantics (making them effectively useless)!!! `binary-searching` corrects this sad state of affairs.
 
 ## Example
 
 ```javascript
 //Import module
-var bounds = require("binary-search-bounds");
+var bounds = require("binary-searching");
 
 //Create an array
 var array = [1, 2, 3, 3, 3, 5, 6, 10, 11, 13, 50, 1000, 2200];
@@ -69,7 +69,11 @@ What has more than 4 legs? Answer: { legs: 6, name: 'ant' }
 Using [npm](https://docs.npmjs.com/), you can install the library as follows:
 
 ```
-npm install binary-search-bounds
+yarn add binary-searching
+```
+
+```
+npm install binary-searching
 ```
 
 This module works great with [browserify](http://browserify.org/) if you want to use it in front end projects.
@@ -77,7 +81,7 @@ This module works great with [browserify](http://browserify.org/) if you want to
 ## API
 
 ```javascript
-var bounds = require("binary-search-bounds");
+var bounds = require("binary-searching");
 ```
 
 #### `bounds.lt(array, y[, cmp, lo, hi])`
